@@ -13,7 +13,7 @@ STATUS = (
     (1, "Available"),
 )
 
-class Items(models.Model):
+class Item(models.Model):
     meal = models.CharField(max_length=1000, unique=True)
     description = models.CharField(max_length=2000)
     price = models.DecimalField(max_digits=10, decimal_places=2)
