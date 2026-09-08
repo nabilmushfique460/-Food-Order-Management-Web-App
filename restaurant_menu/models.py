@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 MEAL_TYPE = (
-    ("starter", "Stater"),
+    ("starter", "Starters"),
     ("salads", "Salads"),
     ("main_dishes", "Main Dishes"),
     ("desserts", "Desserts")
