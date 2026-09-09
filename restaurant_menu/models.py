@@ -23,5 +23,13 @@ class Item(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
 
+    @property
+    def meal_type(self):
+        return self.category
+
+    @meal_type.setter
+    def meal_type(self, value):
+        self.category = value
+
     def __str__(self):
         return self.meal
